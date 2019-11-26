@@ -27,6 +27,4 @@ var friendData = [{
 }];
 
 
-module.exports = {
-    friendData: friendData
-  };
+module.exports = friendData;
