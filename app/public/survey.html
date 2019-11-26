@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <h2>Answer these questions to become matched! <a href="/"><button style="font-size:24px; float:right"><i
+            class="fa fa-home"></i></button></a></h2>
+    <hr>
+    <div class="text-center">
+
+
+    </div>
+    <h3><strong>About You</strong></h3>
+    <h4>Name (Required)</h4>
+    <form>
+      <input type="text" class="form-control" id="name" required>
+    </form>
+    <form>
+      <h4>Link to Photo Image (Required, from Web)</h4>
+      <input type="text" class="form-control" id="photo" required>
+    </form>
+
+    <hr>
+
+    <h3><strong>Question 1</strong></h3>
+    <h4>You like to spend your Sundays watching Football</h4>
+    <!-- Critical to put all radio buttons in a form if the Jquery method to get radio button value is to be used-->
+    <form id="q1">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline1" name="radio" class="custom-control-input" value="1">
+        <label class="custom-control-label" for="customRadioInline1">(1) Strongly Disagree</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline2" name="radio" class="custom-control-input" value="2">
+        <label class="custom-control-label" for="customRadioInline2">(2)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline3" name="radio" class="custom-control-input" value="3">
+        <label class="custom-control-label" for="customRadioInline3">(3)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline4" name="radio" class="custom-control-input" value="4">
+        <label class="custom-control-label" for="customRadioInline4">(4)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline5" name="radio" class="custom-control-input" value="5">
+        <label class="custom-control-label" for="customRadioInline5">(5) Strongly Agree</label>
+      </div>
+    </form>
+
+
+    <h3><strong>Question 2</strong></h3>
+    <h4>Your favorite colors are purple and gold</h4>
+    <form id="q2">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline1" name="radio" class="custom-control-input" value="1">
+        <label class="custom-control-label" for="customRadioInline1">(1) Strongly Disagree</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline2" name="radio" class="custom-control-input" value="2">
+        <label class="custom-control-label" for="customRadioInline2">(2)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline3" name="radio" class="custom-control-input" value="3">
+        <label class="custom-control-label" for="customRadioInline3">(3)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline4" name="radio" class="custom-control-input" value="4">
+        <label class="custom-control-label" for="customRadioInline4">(4)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline5" name="radio" class="custom-control-input" value="5">
+        <label class="custom-control-label" for="customRadioInline5">(5) Strongly Agree</label>
+      </div>
+    </form>
+
+
+    <h3><strong>Question 3</strong></h3>
+    <h4>You are disgusted by the mere idea of the Green Bay Packers</h4>
+    <form id="q3">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline1" name="radio" class="custom-control-input" value="1">
+        <label class="custom-control-label" for="customRadioInline1">(1) Strongly Disagree</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline2" name="radio" class="custom-control-input" value="2">
+        <label class="custom-control-label" for="customRadioInline2">(2)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline3" name="radio" class="custom-control-input" value="3">
+        <label class="custom-control-label" for="customRadioInline3">(3)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline4" name="radio" class="custom-control-input" value="4">
+        <label class="custom-control-label" for="customRadioInline4">(4)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline5" name="radio" class="custom-control-input" value="5">
+        <label class="custom-control-label" for="customRadioInline5">(5) Strongly Agree</label>
+      </div>
+    </form>
+
+
+    <h3><strong>Question 4</strong></h3>
+    <h4>The 1970's were your glory years</h4>
+    <form id="q4">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline1" name="radio" class="custom-control-input" value="1">
+        <label class="custom-control-label" for="customRadioInline1">(1) Strongly Disagree</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline2" name="radio" class="custom-control-input" value="2">
+        <label class="custom-control-label" for="customRadioInline2">(2)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline3" name="radio" class="custom-control-input" value="3">
+        <label class="custom-control-label" for="customRadioInline3">(3)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline4" name="radio" class="custom-control-input" value="4">
+        <label class="custom-control-label" for="customRadioInline4">(4)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline5" name="radio" class="custom-control-input" value="5">
+        <label class="custom-control-label" for="customRadioInline5">(5) Strongly Agree</label>
+      </div>
+    </form>
+
+
+    <h3><strong>Question 5</strong></h3>
+    <h4>You've never won a Superbowl</h4>
+    <form id="q5">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline1" name="radio" class="custom-control-input" value="1">
+        <label class="custom-control-label" for="customRadioInline1">(1) Strongly Disagree</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline2" name="radio" class="custom-control-input" value="2">
+        <label class="custom-control-label" for="customRadioInline2">(2)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline3" name="radio" class="custom-control-input" value="3">
+        <label class="custom-control-label" for="customRadioInline3">(3)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline4" name="radio" class="custom-control-input" value="4">
+        <label class="custom-control-label" for="customRadioInline4">(4)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline5" name="radio" class="custom-control-input" value="5">
+        <label class="custom-control-label" for="customRadioInline5">(5) Strongly Agree</label>
+      </div>
+    </form>
+
+
+    <h3><strong>Question 6</strong></h3>
+    <h4>Minneapolis is beautiful in the winter</h4>
+    <form id="q6">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline1" name="radio" class="custom-control-input" value="1">
+        <label class="custom-control-label" for="customRadioInline1">(1) Strongly Disagree</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline2" name="radio" class="custom-control-input" value="2">
+        <label class="custom-control-label" for="customRadioInline2">(2)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline3" name="radio" class="custom-control-input" value="3">
+        <label class="custom-control-label" for="customRadioInline3">(3)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline4" name="radio" class="custom-control-input" value="4">
+        <label class="custom-control-label" for="customRadioInline4">(4)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline5" name="radio" class="custom-control-input" value="5">
+        <label class="custom-control-label" for="customRadioInline5">(5) Strongly Agree</label>
+      </div>
+    </form>
+
+
+    <h3><strong>Question 7</strong></h3>
+    <h4>You pillage and plunder coastal Irish villages in the 800's</h4>
+    <form id="q7">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline1" name="radio" class="custom-control-input" value="1">
+        <label class="custom-control-label" for="customRadioInline1">(1) Strongly Disagree</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline2" name="radio" class="custom-control-input" value="2">
+        <label class="custom-control-label" for="customRadioInline2">(2)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline3" name="radio" class="custom-control-input" value="3">
+        <label class="custom-control-label" for="customRadioInline3">(3)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline4" name="radio" class="custom-control-input" value="4">
+        <label class="custom-control-label" for="customRadioInline4">(4)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline5" name="radio" class="custom-control-input" value="5">
+        <label class="custom-control-label" for="customRadioInline5">(5) Strongly Agree</label>
+      </div>
+    </form>
+
+    <h3><strong>Question 8</strong></h3>
+    <h4>You get pumped up to do the Skol Chant!</h4>
+    <form id="q8">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline1" name="radio" class="custom-control-input" value="1">
+        <label class="custom-control-label" for="customRadioInline1">(1) Strongly Disagree</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline2" name="radio" class="custom-control-input" value="2">
+        <label class="custom-control-label" for="customRadioInline2">(2)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline3" name="radio" class="custom-control-input" value="3">
+        <label class="custom-control-label" for="customRadioInline3">(3)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline4" name="radio" class="custom-control-input" value="4">
+        <label class="custom-control-label" for="customRadioInline4">(4)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline5" name="radio" class="custom-control-input" value="5">
+        <label class="custom-control-label" for="customRadioInline5">(5) Strongly Agree</label>
+      </div>
+    </form>
+
+    <h3><strong>Question 9</strong></h3>
+    <h4>You know what a Gjallarhorn is</h4>
+    <form id="q9">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline1" name="radio" class="custom-control-input" value="1">
+        <label class="custom-control-label" for="customRadioInline1">(1) Strongly Disagree</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline2" name="radio" class="custom-control-input" value="2">
+        <label class="custom-control-label" for="customRadioInline2">(2)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline3" name="radio" class="custom-control-input" value="3">
+        <label class="custom-control-label" for="customRadioInline3">(3)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline4" name="radio" class="custom-control-input" value="4">
+        <label class="custom-control-label" for="customRadioInline4">(4)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline5" name="radio" class="custom-control-input" value="5">
+        <label class="custom-control-label" for="customRadioInline5">(5) Strongly Agree</label>
+      </div>
+    </form>
+
+    <h3><strong>Question 10</strong></h3>
+    <h4>You think the Minnesota Vikings are the greatest team of all time!</h4>
+    <form id="q10">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline1" name="radio" class="custom-control-input" value="1">
+        <label class="custom-control-label" for="customRadioInline1">(1) Strongly Disagree</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline2" name="radio" class="custom-control-input" value="2">
+        <label class="custom-control-label" for="customRadioInline2">(2)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline3" name="radio" class="custom-control-input" value="3">
+        <label class="custom-control-label" for="customRadioInline3">(3)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline4" name="radio" class="custom-control-input" value="4">
+        <label class="custom-control-label" for="customRadioInline4">(4)</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline5" name="radio" class="custom-control-input" value="5">
+        <label class="custom-control-label" for="customRadioInline5">(5) Strongly Agree</label>
+      </div>
+    </form>
+
+    <br>
+    <br>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
+        aria-hidden="true"></i>
+      Submit</button>
+
+    <hr>
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friendslist">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub
+            Repo</a></p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Modal -->
+  <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title"><strong>Best Match</strong></h2>
+        </div>
+        <div class="modal-body">
+          <h2 id="match-name"></h2>
+          <img id="match-img" src="" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="noname-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title"><strong>No name or photo link.</strong></h2>
+        </div>
+        <div class="modal-body">
+          <h2 id="match-name"></h2>
+          <img id="match-img" src="" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="empty-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title"><strong>One or more of your answers is missing! See those marked in
+              pink.</strong></h2>
+        </div>
+        <div class="modal-body">
+          <h2 id="match-name"></h2>
+          <img id="match-img" src="" alt="" style="width: 100%">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+    $("#submit").on("click", function () {
+      let proceed1 = false;
+      let answerArray = [];
+      let ans1 = $('input[name=radio]:checked', '#q1').val();
+      let ans2 = $('input[name=radio]:checked', '#q2').val();
+      let ans3 = $('input[name=radio]:checked', '#q3').val();
+      let ans4 = $('input[name=radio]:checked', '#q4').val();
+      let ans5 = $('input[name=radio]:checked', '#q5').val();
+      let ans6 = $('input[name=radio]:checked', '#q6').val();
+      let ans7 = $('input[name=radio]:checked', '#q7').val();
+      let ans8 = $('input[name=radio]:checked', '#q8').val();
+      let ans9 = $('input[name=radio]:checked', '#q9').val();
+      let ans10 = $('input[name=radio]:checked', '#q10').val();
+      answerArray.push(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans10);
+      // returns true if there is an A that does not have a value between 1-5
+      // returns false if not (if all values are within 1-5)
+      // function checkArray(a) {
+      //     // return a that is NOT 1 AND 2 AND 3 AND 4 AND 5 
+      //     // OR isn't the same in English, this is saying like
+      //     // return a that is not all these values (value 1 AND value 2... etc)
+      //     return a != "1" && "2" && "3" && "4" && "5";
+      // }
+      function manualCheck(array) {
+        let pass = true;
+        for (i = 0; i < array.length; i++) {
+          if (array[i] === undefined) {
+            pass = false;
+          }
+        }
+        if (pass) {
+          return true;
+        }
+        else {
+          return false;
+        }
+      }
+      if ($("#name").val() === "" || $("#photo").val() === "") {
+        $("#noname-modal").modal();
+      }
+      else {
+        postingStep();
+      }
+      function postingStep() {
+        if (manualCheck(answerArray)) {
+          let newPerson = {
+            name: $("#name").val(),
+            photo: $("#photo").val(),
+            scores: answerArray
+          }
+          console.log(newPerson);
+          $.post("/api/friends", newPerson)
+            .then(function (data) {
+              for (let j = 1; j < answerArray.length + 1; j++) {
+                $("#q" + j + "").attr("style", "background-color: white");
+
+              }
+              $('#empty').remove();
+              console.log(data);
+              alert("Added you in!");
+              displayMatch();
+            });
+        }
+        else {
+          // console.log(answerArray);
+          // let emptyAnswers = [];
+          function showEmpty(array) {
+            for (let j = 0; j < array.length; j++) {
+              if (array[j] === undefined) {
+                // emptyAnswers.push(j);
+                $("#q" + (j + 1) + "").addClass("redIn");
+              }
+              else {
+                $("#q" + (j + 1) + "").removeClass("redIn");
+                $("#q" + (j + 1) + "").attr("style", "background-color: white");
+              }
+            }
+          }
+          //  With the visual jQuery attr set to pink, finding the index values of empties wasn't needed.  
+          showEmpty(answerArray);
+          $("#empty-modal").modal();
+          // console.log(emptyAnswers);
+        }
+      }
+      function displayMatch() {
+        $.get("/api/friends", function (data) {
+          console.log(data);
+          if (data) {
+            $("#results-modal").modal();
+            $("#match-name").text(data.name);
+            $("#match-img").attr("src", data.photo);
+            for (let k = 0; k < answerArray.length; k++) {
+              $("#q" + (k + 1) + "").removeClass("redIn")
+            };
+          }
+          else {
+            alert("Something Broke");
+          }
+        });
+      }
+    });
+  </script>
+
+</body>
+
+</html>
