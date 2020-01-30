@@ -6,7 +6,7 @@ module.exports = function (app) {
     console.log("Navigated to survey.");
   });
 
-  app.get("*", function (res, res) {
+  app.get("/", function (res, res) {
     res.sendFile(path.join(__dirname + "/../public/home.html"));
     console.log("Navigated home")
   });
